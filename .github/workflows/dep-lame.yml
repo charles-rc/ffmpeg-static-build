@@ -43,7 +43,7 @@ jobs:
             --disable-frontend \
             --disable-decoder \
             --enable-nasm \
-            CFLAGS="-fPIC"
+            CFLAGS="-fPIC -O2"
           make -j$(nproc)
           make install
 

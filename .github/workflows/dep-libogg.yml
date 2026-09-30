@@ -40,7 +40,7 @@ jobs:
             --prefix=$GITHUB_WORKSPACE/deps/libogg \
             --enable-static \
             --disable-shared \
-            CFLAGS="-fPIC"
+            CFLAGS="-fPIC -O2"
           make -j$(nproc)
           make install
 
